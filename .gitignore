@@ -1,0 +1,12 @@
+# Block all private key patterns
+id_rsa
+id_ed25519
+id_ecdsa
+id_dsa
+*.pem
+*.key
+
+# Block any file in keys/ that isn't a .pub file
+keys/*
+!keys/*.pub
+!keys/.gitkeep
